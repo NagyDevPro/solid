@@ -22,15 +22,10 @@ public class Organization {
     public void setUsers(List<User> users) {
         this.users = users;
     }
-    //TODO: Think are we here violating solid or not?
-    public void setRatePlan(RatePlan ratePlan) {
-        this.ratePlan = ratePlan;
-
-        for(var user : users){
-            user.setRatePlan(ratePlan);
-        }
-    }
     public RatePlan getRatePlan() {
         return ratePlan;
+    }
+    public void setRatePlan(RatePlan ratePlan) {
+        this.ratePlan = ratePlan;
     }
 }
