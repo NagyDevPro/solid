@@ -1,14 +1,12 @@
 package com.personal;
 
-import com.personal.Subscriber.OneOffSubscription;
-import com.personal.Subscriber.RatePlanSubscription;
+import com.personal.Subscriber.Subscription;
 
 import java.util.List;
 
-public class User{
-   private String name;
-   private RatePlan ratePlan;
-   private List<Publications> publications;
+public class User {
+    private String name;
+    private List<Subscription> subscriptions;
 
     public String getName() {
         return name;
@@ -18,24 +16,14 @@ public class User{
         this.name = name;
     }
 
-    public RatePlan getRatePlan() {
-        return ratePlan;
+
+    public List<Subscription> getSubscriptions() {
+        return subscriptions;
     }
 
-    private void setRatePlan(RatePlan ratePlan) {
-        this.ratePlan = ratePlan;
+    public void addSubscription(Subscription subscription) {
+        this.subscriptions.add(subscription);
     }
-
-    //TODO: think are we here violating solid or not
-    public List<Publications> getPublications() {
-        return publications;
-    }
-    // constructor
-    public User() {
-
-    }
-
-
 
 
 }
