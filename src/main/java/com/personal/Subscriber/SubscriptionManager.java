@@ -9,6 +9,6 @@ public class SubscriptionManager {
         subscription.subscribe();
 
         System.out.println("User " + user.getName() + " has been subscribed to."+ subscription.getClass().getSimpleName());
-
+        subscription.getDetails();
     }
 }
