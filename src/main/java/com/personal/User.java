@@ -1,6 +1,6 @@
 package com.personal;
 
-import com.personal.Subscriber.Subscription;
+import com.personal.subscriber.Subscription;
 
 import java.util.List;
 

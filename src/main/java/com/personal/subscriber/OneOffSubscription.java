@@ -1,8 +1,6 @@
-package com.personal.Subscriber;
+package com.personal.subscriber;
 
 import com.personal.Publications;
-
-import java.util.List;
 
 public class OneOffSubscription implements Subscription{
     private Publications publication;

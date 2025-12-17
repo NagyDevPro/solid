@@ -1,7 +1,5 @@
 package com.personal;
 
-import com.personal.Subscriber.OneOffSubscription;
-
 import java.util.List;
 
 public class RatePlan {

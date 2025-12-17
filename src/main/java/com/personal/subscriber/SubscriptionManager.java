@@ -1,4 +1,4 @@
-package com.personal.Subscriber;
+package com.personal.subscriber;
 
 import com.personal.User;
 
