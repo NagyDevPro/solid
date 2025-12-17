@@ -1,8 +1,11 @@
 package com.personal;
 
+import com.personal.Subscriber.OneOffSubscription;
+import com.personal.Subscriber.RatePlanSubscription;
+
 import java.util.List;
 
-public class User {
+public class User{
    private String name;
    private RatePlan ratePlan;
    private List<Publications> publications;
@@ -19,7 +22,7 @@ public class User {
         return ratePlan;
     }
 
-    public void setRatePlan(RatePlan ratePlan) {
+    private void setRatePlan(RatePlan ratePlan) {
         this.ratePlan = ratePlan;
     }
 
@@ -27,11 +30,12 @@ public class User {
     public List<Publications> getPublications() {
         return publications;
     }
-    public void setPublications(List<Publications> publications) {
-        this.publications = publications;
+    // constructor
+    public User() {
+
     }
-    public void addPublication(Publications publication) {
-        this.publications.add(publication);
-    }
+
+
+
 
 }
