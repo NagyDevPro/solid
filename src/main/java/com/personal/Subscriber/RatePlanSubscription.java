@@ -13,4 +13,9 @@ public class RatePlanSubscription implements Subscription {
     public void subscribe() {
         System.out.println("Subscribed to rate plans: " + String.join(", ", ratePlans));
     }
+    @Override
+    public void getDetails() {
+        System.out.println("Rate Plan Subscription Details:");
+        System.out.println("Rate Plans: " + String.join(", ", ratePlans));
+    }
 }
