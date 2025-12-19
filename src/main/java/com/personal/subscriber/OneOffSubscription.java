@@ -10,6 +10,11 @@ public class OneOffSubscription implements Subscription{
     }
 
     @Override
+    public double getPrice() {
+        return publication.getPrice();
+    }
+
+    @Override
     public void subscribe() {
         System.out.println("Subscribed to one-off publication: " + publication.getTitle());
     }

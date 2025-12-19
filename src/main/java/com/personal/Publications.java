@@ -6,7 +6,7 @@ public class Publications {
     private String author;
     private String publisher;
     private PublicationType type;
-
+    private double price;
 
     public String getTitle() {
         return title;
@@ -38,6 +38,14 @@ public class Publications {
 
     public void setType(PublicationType type) {
         this.type = type;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void updatePrice(double price) {
+        this.price = price;
     }
 
 
